@@ -1,0 +1,23 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body {
+  height: 100vh;
+
+  border-color: theme-color("gray");
+  border-radius: 1rem;
+}
+
+.pt-1 {
+  padding-top: 3rem;
+}
+
+.prl-1 {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px;
+  }
+}

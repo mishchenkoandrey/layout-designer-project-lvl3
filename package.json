@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
@@ -18,7 +19,7 @@
     "htmlhint": "^0.14.2",
     "node-sass": "^5.0.0",
     "stylelint": "^13.10.0",
-    "stylelint-config-rational-order": "^0.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0",
