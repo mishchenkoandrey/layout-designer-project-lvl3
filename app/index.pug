@@ -1,6 +1,3 @@
-include includes/base.pug
-body
-  include includes/header.pug
-  h1 Test
-  section(class='container')
-  include includes/footer.pug
+extends includes/base.pug
+block content
+  include includes/contacts.pug

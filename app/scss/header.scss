@@ -1,0 +1,17 @@
+header {
+  background-color: theme-color();
+}
+
+.logo {
+  width: 13px;
+}
+
+.nav-img {
+  width: 25px;
+}
+
+@media (min-width: 1600px) {
+  header {
+    border-top-left-radius: 16px;
+  }
+}

@@ -1,23 +1,83 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 
+.pt-1 {
+  padding-top: 1rem !important;
+}
+
+.pt-3 {
+  padding-top: 3rem !important;
+}
+
+.prl-1-5 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.pb-1 {
+  padding-bottom: 1rem !important;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.small {
+  font-size: 12.8px !important;
+}
+
+.fs-0 {
+  font-size: 0;
+}
+
+.cg-8 {
+  column-gap: 8px !important;
+}
+
+.cg-40 {
+  column-gap: 40px !important;
+}
+
+.color-light {
+  color: theme-color("light") !important;
+}
+
 body {
   height: 100vh;
+
+  color: theme-color("dark");
+  font: 16px/1.5 'Roboto', sans-serif;
 
   border-color: theme-color("gray");
   border-radius: 1rem;
 }
 
-.pt-1 {
-  padding-top: 3rem;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.prl-1 {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+.ai-stretch {
+  align-items: stretch;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding-left: 0;
+
+  list-style: none;
 }
 
 @media (min-width: 1600px) {
+  .small-xxl {
+    font-size: 12.8px !important;
+  }
+
   .container {
     max-width: 1540px;
+  }
+
+  .cg-32-xxl {
+    column-gap: 32px !important;
   }
 }
