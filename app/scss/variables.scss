@@ -1,5 +1,7 @@
 $enable-shadows: true;
 
+$box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
 $theme-colors:   (
   "primary":    #4545a5,
   "secondary":  #6c757d,
@@ -16,6 +18,25 @@ $theme-colors:   (
   @return map-get($theme-colors, $key);
 }
 
-:root {
-  --breakpoint-xxl: 1600px;
-}
+$grid-gutter-width: 3rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+$container-max-widths: (
+  xxl: 1540px
+);
+
+$spacer: 1rem;
+
+$spacers: (
+  5: ($spacer * 2),
+  6: ($spacer * 2.5),
+  7: ($spacer * 3)
+);

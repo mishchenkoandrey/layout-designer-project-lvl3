@@ -42,7 +42,7 @@ const buildImages = () => src('app/images/*.*')
 
 const startWatch = () => {
 	watch('app/**/*.pug', buildHtml);
-  watch('app/scss/*.scss', buildCss);
+  watch('app/scss/**/*.scss', buildCss);
   watch('app/images/icons/*.svg', buildSvg);
   watch('app/images/*', buildImages);
 };

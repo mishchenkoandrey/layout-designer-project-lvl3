@@ -1,4 +1,10 @@
 header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
   background-color: theme-color();
 }
 
@@ -10,8 +16,10 @@ header {
   width: 25px;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 768px) {
   header {
+    position: sticky;
+
     border-top-left-radius: 16px;
   }
 }

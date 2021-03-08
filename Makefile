@@ -6,4 +6,4 @@ lint:
 	npx htmlhint ./app/*.html
 
 deploy:
-	npx surge ./src/
+	npx surge ./build/

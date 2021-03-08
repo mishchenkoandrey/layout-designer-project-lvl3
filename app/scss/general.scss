@@ -1,49 +1,53 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-
-.pt-1 {
-  padding-top: 1rem !important;
-}
-
-.pt-3 {
-  padding-top: 3rem !important;
-}
-
-.prl-1-5 {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
-}
-
-.pb-1 {
-  padding-bottom: 1rem !important;
+.border-0 {
+  border: 0;
 }
 
 .bold {
   font-weight: 700 !important;
 }
 
-.small {
-  font-size: 12.8px !important;
-}
-
 .fs-0 {
   font-size: 0;
 }
 
-.cg-8 {
-  column-gap: 8px !important;
+.d-flex {
+  align-items: center;
+  justify-content: space-between;
 }
 
-.cg-40 {
-  column-gap: 40px !important;
+.justify-content-normal {
+  justify-content: normal !important;
+}
+
+.align-items-normal {
+  align-items: normal !important;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.color-secondary {
+  color: theme-color("secondary") !important;
 }
 
 .color-light {
   color: theme-color("light") !important;
 }
 
-body {
-  height: 100vh;
+.color-dark {
+  color: theme-color("dark") !important;
+}
 
+.br-50-percent {
+  border-radius: 50%;
+}
+
+.lh-19 {
+  line-height: 19px;
+}
+
+body {
   color: theme-color("dark");
   font: 16px/1.5 'Roboto', sans-serif;
 
@@ -51,33 +55,52 @@ body {
   border-radius: 1rem;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+a:hover {
+  text-decoration: none;
+
+  background-color: theme-color();
 }
 
-.ai-stretch {
-  align-items: stretch;
+a:hover .color-dark {
+  color: theme-color("light") !important;
 }
 
-.list-unstyled {
-  margin: 0;
-  padding-left: 0;
-
-  list-style: none;
+a:hover .color-secondary {
+  color: theme-color("gray") !important;
 }
 
-@media (min-width: 1600px) {
-  .small-xxl {
+main {
+  display: none;
+}
+
+.avatar {
+  @include avatar(50px);
+}
+
+.after-fixed {
+  margin-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+  .height-md-100vh {
+    height: 100vh;
+  }
+
+  .small-md {
     font-size: 12.8px !important;
   }
 
-  .container {
-    max-width: 1540px;
+  .d-md-flex {
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .cg-32-xxl {
-    column-gap: 32px !important;
+  .tab-pane {
+    @include hide-scrollbar();
+    max-height: calc(100vh - 4.5rem - 75px);
+  }
+
+  .after-fixed {
+    margin-bottom: 0;
   }
 }

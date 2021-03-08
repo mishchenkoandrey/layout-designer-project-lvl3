@@ -3,14 +3,15 @@ block content
   div(class="container")
     div(class="row no-gutters pt-md-4 pb-md-4 height-md-100vh")
       aside(class="col-md-7 col-lg-6 col-xl-5 col-xxl-4")
-        - var page = "index"
+        - var page = "chat"
         include includes/header.pug
         div(class="tab-content after-fixed px-4" id="myTabContent")
-          section(class="tab-pane fade show active pt-7" id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
+          section(class="tab-pane fade pt-7" id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
             include includes/contacts.pug
-          section(class="tab-pane fade pt-7" id="chats" role="tabpanel" aria-labelledby="chats-tab")
+          section(class="tab-pane fade show active pt-7" id="chats" role="tabpanel" aria-labelledby="chats-tab")
             include includes/chats.pug
           section(class="tab-pane fade pt-7" id="profile" role="tabpanel" aria-labelledby="profile-tab")
             include includes/profile.pug
-      main(class="col-md d-md-flex flex-column justify-content-center")
-        include includes/greeting.pug
+          div(id="chat" role="tabpanel" aria-labelledby="chat-tab")
+      main(class="col-md d-md-flex flex-column justify-content-normal align-items-normal")
+        include includes/messages.pug

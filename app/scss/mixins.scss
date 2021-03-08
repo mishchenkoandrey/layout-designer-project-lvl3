@@ -11,3 +11,9 @@
     display: none;
   }
 }
+
+@mixin avatar($width) {
+  width: $width;
+
+  border-radius: 50%;
+}

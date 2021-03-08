@@ -1,0 +1,10 @@
+a(href="" class="justify-content-normal cg-4 p-3")
+  img(src=chat.avatar alt=chat.name class="avatar float-left mr-4")
+  div(class="d-flex flex-column align-items-normal flex-grow-1")
+    div(class="d-flex")
+      div(class="bold color-dark")
+        = chat.name
+      div(class="small color-secondary")
+        = chat.time
+    div(class="message-preview-text small lh-19 color-secondary")
+      = chat.message
