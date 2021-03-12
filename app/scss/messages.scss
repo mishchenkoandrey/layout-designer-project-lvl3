@@ -8,18 +8,15 @@
   height: 42px;
 }
 
-.send-svg {
-  position: relative;
-  top: 13px;
-  left: 9px;
+.messages {
+  @include hide-scrollbar();
+}
+
+.tab-pane .messages {
+  height: 100%;
 }
 
 @media (min-width: 768px) {
-  .messages {
-    @include hide-scrollbar();
-    max-height: calc(100vh - 3rem - 82px - 68px);
-  }
-
   .send {
     width: 50px;
     height: 50px;
