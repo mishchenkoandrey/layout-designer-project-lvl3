@@ -40,6 +40,9 @@ const buildImages = () => src('app/images/*.*')
   .pipe(imagemin())
   .pipe(dest('build/images'));
 
+const copyJs = () => src(['node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js'])
+  .pipe(dest('build/js'));
+
 const startWatch = () => {
 	watch('app/**/*.pug', buildHtml);
   watch('app/scss/**/*.scss', buildCss);
@@ -47,4 +50,4 @@ const startWatch = () => {
   watch('app/images/*', buildImages);
 };
 
-exports.default = series(cleanDist, parallel(buildHtml, buildCss, buildSvg, buildImages), startWatch);
+exports.default = series(cleanDist, parallel(buildHtml, buildCss, buildSvg, buildImages, copyJs), startWatch);
