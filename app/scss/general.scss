@@ -84,6 +84,8 @@ main {
 
 .avatar {
   @include avatar(50px);
+  margin-top: 5px;
+  margin-bottom: 4px;
 }
 
 .tab-pane {
