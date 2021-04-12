@@ -1,6 +1,7 @@
-h2(class="mb-4") Профиль
-form(action="#" name="messages" class="border-bottom mb-1")
-  input(type="search" class="pt-3 px-3 pb-3 border-0 lh-19 w-100" placeholder="Поиск по сообщениям")
+include h2
+include search.pug
++h2('Профиль')
++search('messags', 'Поиск по сообщениям')
 div(class="card border-0")
   div(class="ta-center pt-3 px-7 pb-3 mb-3")
     img(src="images/avatar_1.jpg" alt="Кодовёнок Хекслетович" class="avatar-90 mb-3")
