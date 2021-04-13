@@ -99,10 +99,6 @@ main {
   text-overflow: ellipsis;
 }
 
-.rg-50px {
-  row-gap: 50px;
-}
-
 @media (min-width: 768px) {
   .small-md {
     font-size: 12.8px !important;
@@ -113,7 +109,7 @@ main {
     justify-content: space-between;
   }
 
-  .overflow-hidden-md {
+  .overflow-md-hidden {
     overflow: hidden;
   }
 }

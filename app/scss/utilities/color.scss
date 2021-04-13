@@ -1,4 +1,10 @@
-@each $key, $color in $theme-colors {
-  .color-#{$key} { color: $color !important; }
-  .bg-#{$key} { background-color: $color !important; }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $key, $color in $theme-colors {
+      .color#{$infix}-#{$key} { color: $color !important; }
+      .bg#{$infix}-#{$key} { background-color: $color !important; }
+    }
+  }
 }
