@@ -1,5 +1,5 @@
 mixin aside-section(name)
-  section.tab-pane.fade.pt-7.h-100(id=name role="tabpanel" aria-labelledby=name + "-tab" class=(page == "index" && name == "contacts") || (page == "chat" && name == "chats") ? "show active" : '')
+  section.tab-pane.fade.pt-7.h-100(id=name role="tabpanel" aria-labelledby=name + "-tab" class=(page == "index" && name == "contacts") || (page == "chat" && name == "chats") ? "show active" : "")
     if name == "contacts"
       include contacts.pug
     else if name == "chats"

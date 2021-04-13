@@ -1,9 +1,9 @@
 include aside-section.pug
-div(class="container pt-md-4 pb-md-4 h-100 bg-gray")
+div(class="container pt-md-4 pb-md-4 h-100")
   div(class="row no-gutters h-100 bg-white")
     aside(class="d-flex flex-column align-items-normal flex-grow-1 col-md-7 col-lg-6 col-xl-4 h-100 overflow-hidden mx-n4 mx-md-0")
       include header.pug
-      div(class="d-flex flex-column align-items-normal tab-content px-4 h-100")
+      div(class="d-flex flex-column align-items-normal tab-content px-4 h-100 bg-gray")
         +aside-section("contacts")
         +aside-section("chats")
         +aside-section("profile")
@@ -11,9 +11,8 @@ div(class="container pt-md-4 pb-md-4 h-100 bg-gray")
           div(class="tab-pane fade pt-7 h-100 flex-column" id="chat" role="tabpanel" aria-labelledby="chat-tab")
             div(class="d-flex flex-column justify-content-normal align-items-normal h-100 overflow-hidden mt-n7 mt-md-0 d-md-none")
               include messages.pug
-    if page == "index"
-      main(class="col-md d-md-flex flex-column justify-content-center h-100 overflow-hidden")
+    main(class="col-md d-md-flex flex-column h-100 overflow-hidden bg-gray")(class= (page == "index") ? "justify-content-center" : "justify-content-normal align-items-normal")
+      if page == "index"
         include greeting.pug
-    else 
-      main(class="col-md d-md-flex flex-column justify-content-normal align-items-normal h-100 overflow-hidden")
+      else 
         include messages.pug
