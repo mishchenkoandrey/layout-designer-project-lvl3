@@ -1,14 +1,12 @@
+include aside-section.pug
 div(class="container pt-md-4 pb-md-4 h-100 bg-gray")
   div(class="row no-gutters h-100 bg-white")
     aside(class="d-flex flex-column align-items-normal flex-grow-1 col-md-7 col-lg-6 col-xl-4 h-100 overflow-hidden mx-n4 mx-md-0")
       include header.pug
       div(class="d-flex flex-column align-items-normal tab-content px-4 h-100")
-        section(class="tab-pane fade show active pt-7 h-100" id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
-          include contacts.pug
-        section(class="tab-pane fade pt-7 h-100" id="chats" role="tabpanel" aria-labelledby="chats-tab")
-          include chats.pug
-        section(class="tab-pane fade pt-7 h-100" id="profile" role="tabpanel" aria-labelledby="profile-tab")
-          include profile.pug
+        +aside-section("contacts")
+        +aside-section("chats")
+        +aside-section("profile")
         if page == "chat"
           div(class="tab-pane fade pt-7 h-100 flex-column" id="chat" role="tabpanel" aria-labelledby="chat-tab")
             div(class="d-flex flex-column justify-content-normal align-items-normal h-100 overflow-hidden mt-n7 mt-md-0 d-md-none")
