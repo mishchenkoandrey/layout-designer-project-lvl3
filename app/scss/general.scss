@@ -111,6 +111,10 @@ main {
   row-gap: 50px;
 }
 
+.bottom-0 {
+  bottom: 0;
+}
+
 @media (min-width: 768px) {
   .small-md {
     font-size: 12.8px !important;

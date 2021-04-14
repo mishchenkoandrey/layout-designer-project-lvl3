@@ -1,5 +1,5 @@
 include chat-header.pug
-div(class="messages py-7 px-4 px-md-0 px-lg-7 h-100")
+div(class="messages py-7 px-4 px-md-0 px-lg-7")
   div(class="message d-flex align-items-end contact justify-content-normal cg-4 cg-md-1 cg-lg-4 mb-3")
     img(src="images/avatar_4.jpg" alt="Вениамин Редакторович" class="avatar")
     div(class="d-flex flex-column align-items-normal p-4 p-md-3 p-lg-4 radius bg-light shadow-sm")
@@ -28,7 +28,7 @@ div(class="messages py-7 px-4 px-md-0 px-lg-7 h-100")
       div(class="bold color-dark pb-1") Вениамин Редакторович
       div(class="color-secondary pb-2 border-bottom") о_О
       div(class="small lh-19 color-secondary pt-1") Только что
-form(action="#" name="contacts" class="d-flex border-top mx-7 pr-1") 
+form(action="#" name="contacts" class="d-flex border-top mx-lg-7 pr-1 position-sticky bottom-0") 
   input(type="search" class="flex-grow-1 py-5 px-md-4 border-0 lh-19" placeholder="Напишите сообщение...")
   button(class="send bg-primary br-50-percent color-light fs-0 cursor-pointer border-0")
     svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cursor send-svg" viewBox="0 0 16 16")

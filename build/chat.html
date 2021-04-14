@@ -28,12 +28,12 @@
               </ul>
             </nav>
           </header>
-          <div class="d-flex flex-column align-items-normal tab-content px-4 h-100">
-                <section class="tab-pane fade pt-7 h-100" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-                        <h2 class="mb-4">Контакты</h2>
-                        <form class="border-bottom mb-7" action="#" name="contacts"> 
-                          <input class="pt-3 px-4 pb-14px border-0 lh-19 w-100" type="search" placeholder="Поиск по контактам">
-                        </form>
+          <div class="d-flex flex-column align-items-normal tab-content px-4 overflow-hidden">
+                <section class="tab-pane fade pt-7" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                  <h2 class="mb-4">Контакты</h2>
+                  <form class="border-bottom mb-7" action="#" name="contacts"> 
+                    <input class="pt-3 px-4 pb-14px border-0 lh-19 w-100" type="search" placeholder="Поиск по контактам">
+                  </form>
                   <div class="d-flex flex-column align-items-normal rg-50px">
                     <div class="d-flex flex-column align-items-normal rg-19px">
                       <div class="text-muted lh-19">A
@@ -103,11 +103,11 @@
                     </div>
                   </div>
                 </section>
-                <section class="tab-pane fade pt-7 h-100 show active" id="chats" role="tabpanel" aria-labelledby="chats-tab">
-                        <h2 class="mb-4">Чаты</h2>
-                        <form class="border-bottom mb-7" action="#" name="messags"> 
-                          <input class="pt-3 px-4 pb-14px border-0 lh-19 w-100" type="search" placeholder="Поиск по сообщениям">
-                        </form>
+                <section class="tab-pane fade pt-7 show active" id="chats" role="tabpanel" aria-labelledby="chats-tab">
+                  <h2 class="mb-4">Чаты</h2>
+                  <form class="border-bottom mb-7" action="#" name="messags"> 
+                    <input class="pt-3 px-4 pb-14px border-0 lh-19 w-100" type="search" placeholder="Поиск по сообщениям">
+                  </form>
                   <div class="d-flex flex-column align-items-normal rg-3"><a class="d-flex align-items-normal cg-4 p-3 shadow-sm" href="chat.html"><img class="avatar" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
                       <div class="flex-grow-1 text-hidden">
                         <div class="d-flex">
@@ -129,11 +129,11 @@
                       </div></a>
                   </div>
                 </section>
-                <section class="tab-pane fade pt-7 h-100" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <h2 class="mb-4">Профиль</h2>
-                        <form class="border-bottom mb-7" action="#" name="messags"> 
-                          <input class="pt-3 px-4 pb-14px border-0 lh-19 w-100" type="search" placeholder="Поиск по сообщениям">
-                        </form>
+                <section class="tab-pane fade pt-7" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <h2 class="mb-4">Профиль</h2>
+                  <form class="border-bottom mb-7" action="#" name="messags"> 
+                    <input class="pt-3 px-4 pb-14px border-0 lh-19 w-100" type="search" placeholder="Поиск по сообщениям">
+                  </form>
                   <div class="card border-0">
                     <div class="ta-center pt-5 px-4 pb-3 mb-3"><img class="avatar-90 mb-3" src="images/avatar_1.jpg" alt="Кодовёнок Хекслетович">
                       <div class="bold color-dark mb-3">Кодовёнок Хекслетович</div>
@@ -178,15 +178,15 @@
                     </div>
                   </div>
                 </section>
-            <div class="tab-pane fade pt-7 h-100 flex-column" id="chat" role="tabpanel" aria-labelledby="chat-tab">
-              <div class="d-flex flex-column justify-content-normal align-items-normal h-100 overflow-hidden mt-n7 mt-md-0 d-md-none">
+            <div class="tab-pane fade flex-column" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+              <div class="d-flex flex-column justify-content-normal align-items-normal h-100 overflow-hidden mt-md-0 d-md-none">
                 <div class="d-flex justify-content-normal p-3 position-sticky cg-4 cg-md-2 cg-lg-4 mx-n4 mx-md-0"><img class="avatar" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
                   <div class="d-flex flex-column align-items-normal">
                     <div class="bold color-dark">Вениамин Редакторович</div>
                     <div class="small lh-19 color-secondary">Онлайн</div>
                   </div>
                 </div>
-                <div class="messages py-7 px-4 px-md-0 px-lg-7 h-100">
+                <div class="messages py-7 px-4 px-md-0 px-lg-7">
                   <div class="message d-flex align-items-end contact justify-content-normal cg-4 cg-md-1 cg-lg-4 mb-3"><img class="avatar" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
                     <div class="d-flex flex-column align-items-normal p-4 p-md-3 p-lg-4 radius bg-light shadow-sm">
                       <div class="bold color-dark pb-1">Вениамин Редакторович</div>
@@ -221,7 +221,7 @@
                     </div>
                   </div>
                 </div>
-                <form class="d-flex border-top mx-7 pr-1" action="#" name="contacts"> 
+                <form class="d-flex border-top mx-lg-7 pr-1 position-sticky bottom-0" action="#" name="contacts"> 
                   <input class="flex-grow-1 py-5 px-md-4 border-0 lh-19" type="search" placeholder="Напишите сообщение...">
                   <button class="send bg-primary br-50-percent color-light fs-0 cursor-pointer border-0">
                     <svg class="bi bi-cursor send-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
@@ -240,7 +240,7 @@
               <div class="small lh-19 color-secondary">Онлайн</div>
             </div>
           </div>
-          <div class="messages py-7 px-4 px-md-0 px-lg-7 h-100">
+          <div class="messages py-7 px-4 px-md-0 px-lg-7">
             <div class="message d-flex align-items-end contact justify-content-normal cg-4 cg-md-1 cg-lg-4 mb-3"><img class="avatar" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
               <div class="d-flex flex-column align-items-normal p-4 p-md-3 p-lg-4 radius bg-light shadow-sm">
                 <div class="bold color-dark pb-1">Вениамин Редакторович</div>
@@ -275,7 +275,7 @@
               </div>
             </div>
           </div>
-          <form class="d-flex border-top mx-7 pr-1" action="#" name="contacts"> 
+          <form class="d-flex border-top mx-lg-7 pr-1 position-sticky bottom-0" action="#" name="contacts"> 
             <input class="flex-grow-1 py-5 px-md-4 border-0 lh-19" type="search" placeholder="Напишите сообщение...">
             <button class="send bg-primary br-50-percent color-light fs-0 cursor-pointer border-0">
               <svg class="bi bi-cursor send-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
