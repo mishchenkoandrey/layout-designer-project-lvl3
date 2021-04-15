@@ -11,8 +11,8 @@ div(class="container pt-md-4 pb-md-4 h-100 bg-md-gray")
         +aside-section("profile")
           include profile.pug
         if page == "chat"
-          div(class="tab-pane fade flex-column" id="current-chat" role="tabpanel" aria-labelledby="chat-tab")
-            div(class="d-flex flex-column justify-content-normal align-items-normal h-100 overflow-hidden mt-md-0 d-md-none")
+          div(class="tab-pane fade flex-column h-100" id="current-chat" role="tabpanel" aria-labelledby="chat-tab")
+            div(class="d-flex flex-column justify-content-normal align-items-normal h-100 mt-md-0 d-md-none")
               include messages.pug
     - const extraClass = page == "index" ? "justify-content-center" : "justify-content-normal align-items-normal"
     main(class= `col-md d-md-flex flex-column h-100 overflow-hidden ${extraClass}`)

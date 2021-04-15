@@ -88,7 +88,7 @@ main {
   margin-bottom: 4px;
 }
 
-.tab-pane {
+.hide-scrollbar {
   @include hide-scrollbar();
 }
 
